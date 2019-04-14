@@ -1,35 +1,111 @@
-<!-- Written 03/10/2019 18:13:36 -->
+<!-- Written 04/13/2019 21:46:09 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
-    <fileversion>Version 1</fileversion>
-    <deftitle>test\tuner_pro_xdf</deftitle>
-    <description>Original</description>
-    <author>mesim translator, modified by dave205t</author>
+    <fileversion>0.0.1</fileversion>
+    <deftitle>ZF 6HP</deftitle>
+    <description></description>
+    <author>kdm</author>
     <BASEOFFSET offset="0" subtract="0" />
     <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="1" signed="0" lsbfirst="1" float="0" />
     <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x100000" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
-    <CATEGORY index="0x0" name="Common Maps Upshift Offgoing Clutch" />
+    <CATEGORY index="0x0" name="Common, upshift, offgoing" />
     <CATEGORY index="0x1" name="Hexdump" />
     <CATEGORY index="0x2" name="Meine Kennfelder" />
-    <CATEGORY index="0x3" name="Misc." />
-    <CATEGORY index="0x4" name="Shift Pressure Neutral Shifts" />
-    <CATEGORY index="0x5" name="Shift Pressure Upshift D Mode Ongoing Clutch" />
-    <CATEGORY index="0x6" name="Shift Pressure Upshift M Mode (Alpina) Ongoing Clutch" />
-    <CATEGORY index="0x7" name="Shift Pressure Upshift S/M Mode Ongoing Clutch" />
+    <CATEGORY index="0x3" name="Config" />
+    <CATEGORY index="0x4" name="Shift pressure, neutral" />
+    <CATEGORY index="0x5" name="Shift pressure, upshift, ongoing, D mode" />
+    <CATEGORY index="0x6" name="Shift pressure, upshift, ongoing, M mode (Alpina)" />
+    <CATEGORY index="0x7" name="Shift pressure, upshift, ongoing, M/S mode" />
     <CATEGORY index="0x8" name="Shiftmaps" />
-    <CATEGORY index="0x9" name="TCC" />
-    <CATEGORY index="0xA" name="TQ Management D Mode Upshift" />
-    <CATEGORY index="0xB" name="TQ Management M Mode (Alpina) Upshift" />
-    <CATEGORY index="0xC" name="TQ Management S/M Mode Upshift" />
-    <CATEGORY index="0x13" name="Common Maps Upshift Offgoing Clutch Breakpoints" />
-    <CATEGORY index="0x14" name="Shift Pressure Upshift D Mode Ongoing Clutch Breakpoints" />
-    <CATEGORY index="0x15" name="Shift Pressure Upshift M Mode (Alpina) Ongoing Clutch Breakpoints" />
-    <CATEGORY index="0x16" name="Shift Pressure Upshift S/M Mode Ongoing Clutch Breakpoints" />
-    <CATEGORY index="0x17" name="Shiftmaps Breakpoints" />
+    <CATEGORY index="0x9" name="Torque converter clutch" />
+    <CATEGORY index="0xA" name="Torque management, upshift, D mode" />
+    <CATEGORY index="0xB" name="Torque management, upshift, M mode (Alpina)" />
+    <CATEGORY index="0xC" name="Torque management, upshift, M/S mode" />
+    <CATEGORY index="0xD" name="Shift pressure" />
+    <CATEGORY index="0xE" name="Shift time" />
+    <CATEGORY index="0xF" name="Torque management" />
+    <CATEGORY index="0x10" name="D mode" />
+    <CATEGORY index="0x11" name="M mode (Alpina)" />
+    <CATEGORY index="0x12" name="M/S mode" />
+    <CATEGORY index="0x13" name="Common, upshift, offgoing breakpoints" />
+    <CATEGORY index="0x14" name="Shift pressure, upshift, ongoing, D Mode breakpoints" />
+    <CATEGORY index="0x15" name="Shift pressure, upshift, ongoing, M Mode (Alpina) breakpoints" />
+    <CATEGORY index="0x16" name="Shift pressure, upshift, ongoing, M/S Mode breakpoints" />
+    <CATEGORY index="0x17" name="Shiftmaps breakpoints" />
+    <CATEGORY index="0x18" name="Ongoing" />
+    <CATEGORY index="0x19" name="Offgoing" />
+    <CATEGORY index="0x1A" name="Warmup" />
+    <CATEGORY index="0x1B" name="Warm" />
+    <CATEGORY index="0x1C" name="Cold" />
+    <CATEGORY index="0x1D" name="Upshift" />
+    <CATEGORY index="0x1E" name="Downshift" />
+    <CATEGORY index="0x1F" name="Neutral shifts" />
+    <CATEGORY index="0x20" name="Torque limit" />
+    <CATEGORY index="0x21" name="2nd gear start" />
+    <CATEGORY index="0x22" name="Axes" />
   </XDFHEADER>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>ZF Project#</title>
+    <title>BMW project #</title>
+    <CATEGORYMEM index="0" category="4" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>17</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <LABEL index="1" value="1" />
+      <LABEL index="2" value="2" />
+      <LABEL index="3" value="3" />
+      <LABEL index="4" value="4" />
+      <LABEL index="5" value="5" />
+      <LABEL index="6" value="6" />
+      <LABEL index="7" value="7" />
+      <LABEL index="8" value="8" />
+      <LABEL index="9" value="9" />
+      <LABEL index="10" value="10" />
+      <LABEL index="11" value="11" />
+      <LABEL index="12" value="12" />
+      <LABEL index="13" value="13" />
+      <LABEL index="14" value="14" />
+      <LABEL index="15" value="15" />
+      <LABEL index="16" value="16" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x500A0" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="17" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>4</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>ZF project #</title>
     <CATEGORYMEM index="0" category="4" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -268,10 +344,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x121A" flags="0x0">
+  <XDFTABLE uniqueid="0x121A" vislevel="2" flags="0x0">
     <title>Uphill A1 Throttle (Different between stock and Alpina)</title>
     <CATEGORYMEM index="0" category="9" />
-    <CATEGORYMEM index="1" category="24" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
@@ -307,18 +383,28 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x23F5" flags="0x0">
+  <XDFTABLE uniqueid="0x23F5" vislevel="2" flags="0x0">
     <title>HS 1-&gt;2 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="20" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>lb-ft</units>
-      <indexcount>1</indexcount>
+      <units>Row</units>
+      <indexcount>10</indexcount>
+      <outputtype>4</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
+      <LABEL index="0" value="1" />
+      <LABEL index="1" value="2" />
+      <LABEL index="2" value="3" />
+      <LABEL index="3" value="4" />
+      <LABEL index="4" value="5" />
+      <LABEL index="5" value="6" />
+      <LABEL index="6" value="7" />
+      <LABEL index="7" value="8" />
+      <LABEL index="8" value="9" />
+      <LABEL index="9" value="10" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -346,7 +432,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x54488" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x54488" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
@@ -357,37 +443,56 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x3829" flags="0x0">
+  <XDFTABLE uniqueid="0x3829" vislevel="2" flags="0x0">
     <title>HS 2-&gt;3 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="20" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>lb-ft</units>
-      <indexcount>1</indexcount>
+      <units>Row</units>
+      <indexcount>10</indexcount>
+      <outputtype>4</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
+      <LABEL index="0" value="1" />
+      <LABEL index="1" value="2" />
+      <LABEL index="2" value="3" />
+      <LABEL index="3" value="4" />
+      <LABEL index="4" value="5" />
+      <LABEL index="5" value="6" />
+      <LABEL index="6" value="7" />
+      <LABEL index="7" value="8" />
+      <LABEL index="8" value="9" />
+      <LABEL index="9" value="10" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x54618" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>lb-ft</units>
+      <units>Row</units>
       <indexcount>10</indexcount>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
+      <outputtype>4</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
+      <LABEL index="0" value="1" />
+      <LABEL index="1" value="2" />
+      <LABEL index="2" value="3" />
+      <LABEL index="3" value="4" />
+      <LABEL index="4" value="5" />
+      <LABEL index="5" value="6" />
+      <LABEL index="6" value="7" />
+      <LABEL index="7" value="8" />
+      <LABEL index="8" value="9" />
+      <LABEL index="9" value="10" />
       <MATH equation="((X*6)-204)*.7375621492772654">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x54618" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x54618" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
       <decimalpl>2</decimalpl>
       <min>0.000000</min>
@@ -398,37 +503,56 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x4548" flags="0x0">
+  <XDFTABLE uniqueid="0x4548" vislevel="2" flags="0x0">
     <title>HS 3-&gt;4 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="20" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>lb-ft</units>
-      <indexcount>1</indexcount>
+      <units>Row</units>
+      <indexcount>10</indexcount>
+      <outputtype>4</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
+      <LABEL index="0" value="1" />
+      <LABEL index="1" value="2" />
+      <LABEL index="2" value="3" />
+      <LABEL index="3" value="4" />
+      <LABEL index="4" value="5" />
+      <LABEL index="5" value="6" />
+      <LABEL index="6" value="7" />
+      <LABEL index="7" value="8" />
+      <LABEL index="8" value="9" />
+      <LABEL index="9" value="10" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x547A8" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>lb-ft</units>
+      <units>Row</units>
       <indexcount>10</indexcount>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
+      <outputtype>4</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
+      <LABEL index="0" value="1" />
+      <LABEL index="1" value="2" />
+      <LABEL index="2" value="3" />
+      <LABEL index="3" value="4" />
+      <LABEL index="4" value="5" />
+      <LABEL index="5" value="6" />
+      <LABEL index="6" value="7" />
+      <LABEL index="7" value="8" />
+      <LABEL index="8" value="9" />
+      <LABEL index="9" value="10" />
       <MATH equation="((X*6)-204)*.7375621492772654">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x547A8" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x547A8" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
       <decimalpl>2</decimalpl>
       <min>0.000000</min>
@@ -439,18 +563,28 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x1B63" flags="0x0">
+  <XDFTABLE uniqueid="0x1B63" vislevel="2" flags="0x0">
     <title>HS 4-&gt;5 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="20" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>lb-ft</units>
-      <indexcount>1</indexcount>
+      <units>Row</units>
+      <indexcount>10</indexcount>
+      <outputtype>4</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
+      <LABEL index="0" value="1" />
+      <LABEL index="1" value="2" />
+      <LABEL index="2" value="3" />
+      <LABEL index="3" value="4" />
+      <LABEL index="4" value="5" />
+      <LABEL index="5" value="6" />
+      <LABEL index="6" value="7" />
+      <LABEL index="7" value="8" />
+      <LABEL index="8" value="9" />
+      <LABEL index="9" value="10" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -469,7 +603,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x54938" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x54938" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
       <decimalpl>2</decimalpl>
       <min>0.000000</min>
@@ -480,18 +614,28 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x162A" flags="0x0">
+  <XDFTABLE uniqueid="0x162A" vislevel="2" flags="0x0">
     <title>HS 5-&gt;6 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="20" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>lb-ft</units>
-      <indexcount>1</indexcount>
+      <units>Row</units>
+      <indexcount>10</indexcount>
+      <outputtype>4</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
+      <LABEL index="0" value="1" />
+      <LABEL index="1" value="2" />
+      <LABEL index="2" value="3" />
+      <LABEL index="3" value="4" />
+      <LABEL index="4" value="5" />
+      <LABEL index="5" value="6" />
+      <LABEL index="6" value="7" />
+      <LABEL index="7" value="8" />
+      <LABEL index="8" value="9" />
+      <LABEL index="9" value="10" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -510,72 +654,13 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x54AC8" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x54AC8" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
       <decimalpl>2</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
       <outputtype>2</outputtype>
       <MATH equation="((X*6)-204)*.7375621492772654">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>BMW Project#</title>
-    <CATEGORYMEM index="0" category="4" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>17</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <LABEL index="1" value="1" />
-      <LABEL index="2" value="2" />
-      <LABEL index="3" value="3" />
-      <LABEL index="4" value="4" />
-      <LABEL index="5" value="5" />
-      <LABEL index="6" value="6" />
-      <LABEL index="7" value="7" />
-      <LABEL index="8" value="8" />
-      <LABEL index="9" value="9" />
-      <LABEL index="10" value="10" />
-      <LABEL index="11" value="11" />
-      <LABEL index="12" value="12" />
-      <LABEL index="13" value="13" />
-      <LABEL index="14" value="14" />
-      <LABEL index="15" value="15" />
-      <LABEL index="16" value="16" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>1</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x500A0" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="17" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>-</units>
-      <decimalpl>1</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>4</outputtype>
-      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -593,7 +678,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -636,7 +721,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -661,7 +746,7 @@
       <min>0.000000</min>
       <max>20.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -679,7 +764,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -704,7 +789,7 @@
       <min>0.000000</min>
       <max>20.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -722,7 +807,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -747,7 +832,7 @@
       <min>0.000000</min>
       <max>20.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -765,7 +850,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -790,7 +875,7 @@
       <min>0.000000</min>
       <max>20.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -798,7 +883,9 @@
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>HS 1-&gt;2 [Ongoing] [D mode]</title>
     <description>Shift Pressure maps tell the TCU what main pressure is to be applied during a shift.&#013;&#010;In each shift 2 pressure maps are involved.&#013;&#010;One for the ongoing, one for the offgoing clutch.&#013;&#010;&#013;&#010;To get a proper shift Ongoing/Offgoing pressure and TQ correction have to be aligned.</description>
-    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="0" category="14" />
+    <CATEGORYMEM index="1" category="25" />
+    <CATEGORYMEM index="2" category="17" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x571C8" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -809,7 +896,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -834,7 +921,7 @@
       <min>0.000000</min>
       <max>9.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -852,7 +939,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -877,7 +964,7 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -895,7 +982,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -920,7 +1007,7 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -938,7 +1025,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -963,7 +1050,7 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -981,7 +1068,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1006,15 +1093,17 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>HS 1-&gt;2 [Ongoing] [S/M mode]</title>
-    <description>Shift Pressure maps tell the TCU what main pressure is to be applied during a shift. In each shift 2 pressure maps are involved. One for the ongoing, one for the offgoing clutch. While offgoing maps are the same for D/S/M mode, the ongoing clutches use different maps for each mode.&#013;&#010;&#013;&#010;To get a proper shift Ongoing/Offgoing pressure and TQ correction have to be aligned.</description>
-    <CATEGORYMEM index="0" category="8" />
+    <title>HS 1-&gt;2 [Ongoing] [M/S mode]</title>
+    <description>Shift Pressure maps tell the TCU what main pressure is to be applied during a shift. In each shift 2 pressure maps are involved. One for the ongoing, one for the offgoing clutch. While offgoing maps are the same for D/M/S mode, the ongoing clutches use different maps for each mode.&#013;&#010;&#013;&#010;To get a proper shift Ongoing/Offgoing pressure and TQ correction have to be aligned.</description>
+    <CATEGORYMEM index="0" category="14" />
+    <CATEGORYMEM index="1" category="25" />
+    <CATEGORYMEM index="2" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x578E4" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -1025,7 +1114,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1050,13 +1139,13 @@
       <min>0.000000</min>
       <max>8.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>HS 2-&gt;3 [Ongoing] [S/M mode]</title>
+    <title>HS 2-&gt;3 [Ongoing] [M/S mode]</title>
     <CATEGORYMEM index="0" category="8" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x57A50" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
@@ -1068,7 +1157,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1093,13 +1182,13 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>HS 3-&gt;4 [Ongoing] [S/M mode]</title>
+    <title>HS 3-&gt;4 [Ongoing] [M/S mode]</title>
     <CATEGORYMEM index="0" category="8" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x57C60" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
@@ -1111,7 +1200,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1136,13 +1225,13 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>HS 4-&gt;5 [Ongoing] [S/M mode]</title>
+    <title>HS 4-&gt;5 [Ongoing] [M/S mode]</title>
     <CATEGORYMEM index="0" category="8" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x57E70" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
@@ -1154,7 +1243,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1179,13 +1268,13 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>HS 5-&gt;6 [Ongoing] [S/M mode]</title>
+    <title>HS 5-&gt;6 [Ongoing] [M/S mode]</title>
     <CATEGORYMEM index="0" category="8" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x58080" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
@@ -1197,7 +1286,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1222,15 +1311,17 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>HS 1-&gt;2 [Ongoing] [M mode]</title>
-    <description>Shift Pressure maps tell the TCU what main pressure is to be applied during a shift. In each shift 2 pressure maps are involved. One for the ongoing, one for the offgoing clutch. While offgoing maps are the same for D/S/M mode, the ongoing clutches use different maps for each mode.&#013;&#010;&#013;&#010;To get a proper shift Ongoing/Offgoing pressure and TQ correction have to be aligned.</description>
-    <CATEGORYMEM index="0" category="7" />
+    <description>Shift Pressure maps tell the TCU what main pressure is to be applied during a shift. In each shift 2 pressure maps are involved. One for the ongoing, one for the offgoing clutch. While offgoing maps are the same for D/M/S mode, the ongoing clutches use different maps for each mode.&#013;&#010;&#013;&#010;To get a proper shift Ongoing/Offgoing pressure and TQ correction have to be aligned.</description>
+    <CATEGORYMEM index="0" category="14" />
+    <CATEGORYMEM index="1" category="25" />
+    <CATEGORYMEM index="2" category="18" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x58290" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -1241,7 +1332,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1266,12 +1357,12 @@
       <min>0.000000</min>
       <max>8.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
+  <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>HS 2-&gt;3 [Ongoing] [M mode]</title>
     <CATEGORYMEM index="0" category="7" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -1284,7 +1375,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1307,9 +1398,9 @@
       <units>bar</units>
       <decimalpl>2</decimalpl>
       <min>0.000000</min>
-      <max>65.535004</max>
+      <max>20.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1327,7 +1418,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1352,7 +1443,7 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1370,7 +1461,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1395,7 +1486,7 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1413,7 +1504,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1438,14 +1529,15 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>N-&gt;2</title>
-    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="0" category="14" />
+    <CATEGORYMEM index="1" category="32" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x59200" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -1456,7 +1548,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1481,7 +1573,7 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1499,7 +1591,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1524,7 +1616,7 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1542,7 +1634,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1567,7 +1659,7 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1585,7 +1677,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1610,7 +1702,7 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1628,7 +1720,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1653,7 +1745,7 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1671,7 +1763,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1696,7 +1788,7 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1705,7 +1797,7 @@
     <title>R-&gt;N</title>
     <CATEGORYMEM index="0" category="5" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x596B0" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x596B0" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
       <units>RPM</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
@@ -1714,12 +1806,12 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x596C0" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x596C0" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="16" mmedminorstridebits="0" />
       <units>lb-ft</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -1739,14 +1831,16 @@
       <min>0.000000</min>
       <max>65.535004</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.001000 * X">
+      <MATH equation="0.001*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Shift time HS 1-&gt;2</title>
-    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="0" category="15" />
+    <CATEGORYMEM index="1" category="25" />
+    <CATEGORYMEM index="2" category="17" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5ADBE" mmedelementsizebits="8" mmedcolcount="4" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -1757,7 +1851,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1800,7 +1894,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1825,7 +1919,7 @@
       <min>0.000000</min>
       <max>2000.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1843,7 +1937,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1868,7 +1962,7 @@
       <min>0.000000</min>
       <max>2000.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1886,7 +1980,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1911,7 +2005,7 @@
       <min>0.000000</min>
       <max>500.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1929,7 +2023,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1954,14 +2048,16 @@
       <min>0.000000</min>
       <max>2000.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Shift time HS 1-&gt;2</title>
-    <CATEGORYMEM index="0" category="8" />
+    <CATEGORYMEM index="0" category="15" />
+    <CATEGORYMEM index="1" category="25" />
+    <CATEGORYMEM index="2" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5AE4A" mmedelementsizebits="8" mmedcolcount="4" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -1972,7 +2068,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1997,7 +2093,7 @@
       <min>0.000000</min>
       <max>500.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2015,7 +2111,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2040,7 +2136,7 @@
       <min>0.000000</min>
       <max>500.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2058,7 +2154,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2083,7 +2179,7 @@
       <min>0.000000</min>
       <max>500.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2101,7 +2197,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2144,7 +2240,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2169,14 +2265,16 @@
       <min>0.000000</min>
       <max>500.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Shift time HS 1-&gt;2</title>
-    <CATEGORYMEM index="0" category="7" />
+    <CATEGORYMEM index="0" category="15" />
+    <CATEGORYMEM index="1" category="25" />
+    <CATEGORYMEM index="2" category="18" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5AED6" mmedelementsizebits="8" mmedcolcount="4" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2187,7 +2285,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2212,7 +2310,7 @@
       <min>0.000000</min>
       <max>500.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2230,7 +2328,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2255,7 +2353,7 @@
       <min>0.000000</min>
       <max>500.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2273,7 +2371,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2298,7 +2396,7 @@
       <min>0.000000</min>
       <max>500.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2316,7 +2414,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2341,7 +2439,7 @@
       <min>0.000000</min>
       <max>500.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2359,7 +2457,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2384,7 +2482,7 @@
       <min>0.000000</min>
       <max>500.000000</max>
       <outputtype>2</outputtype>
-      <MATH equation="10.000000 * X">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2392,7 +2490,9 @@
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>HS 1-&gt;2</title>
     <description>TQ Management Maps come into play during shift transtions and are an additional correction factor to the calculated TQ reduction from the TCU. So a value of 1.0 means &quot;no correction&quot; while 0.5 means that the calculated value get&apos;s cut by half.&#013;&#010;&#013;&#010;In general, a lower correction value means faster engine deccel during upshifts.</description>
-    <CATEGORYMEM index="0" category="11" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="17" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5DBCA" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2403,7 +2503,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2435,7 +2535,9 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 2-&gt;3</title>
-    <CATEGORYMEM index="0" category="11" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="17" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5DC6A" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2446,7 +2548,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2471,14 +2573,16 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 3-&gt;4</title>
-    <CATEGORYMEM index="0" category="11" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="17" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5DD0A" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2489,7 +2593,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2514,14 +2618,16 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 4-&gt;5</title>
-    <CATEGORYMEM index="0" category="11" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="17" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5DDAA" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2532,7 +2638,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2557,14 +2663,16 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 5-&gt;6</title>
-    <CATEGORYMEM index="0" category="11" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="17" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5DE4A" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2575,7 +2683,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2600,7 +2708,7 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2608,7 +2716,9 @@
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>HS 1-&gt;2</title>
     <description>TQ Management Maps come into play during shift transtions and are an additional correction factor to the calculated TQ reduction from the TCU. So a value of 1.0 means &quot;no correction&quot; while 0.5 means that the calculated value get&apos;s cut by half.&#013;&#010;&#013;&#010;In general, a lower correction value means faster engine deccel during upshifts.</description>
-    <CATEGORYMEM index="0" category="13" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5DEEA" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2619,7 +2729,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2651,7 +2761,9 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 2-&gt;3</title>
-    <CATEGORYMEM index="0" category="13" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5DF8A" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2662,7 +2774,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2687,14 +2799,16 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 3-&gt;4</title>
-    <CATEGORYMEM index="0" category="13" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5E07A" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2705,7 +2819,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2730,14 +2844,16 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 4-&gt;5</title>
-    <CATEGORYMEM index="0" category="13" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5E16A" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2748,7 +2864,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2773,14 +2889,16 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 5-&gt;6</title>
-    <CATEGORYMEM index="0" category="13" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5E25A" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2791,7 +2909,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2816,7 +2934,7 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2824,7 +2942,9 @@
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>HS 1-&gt;2</title>
     <description>TQ Management Maps come into play during shift transtions and are an additional correction factor to the calculated TQ reduction from the TCU. So a value of 1.0 means &quot;no correction&quot; while 0.5 means that the calculated value get&apos;s cut by half.&#013;&#010;&#013;&#010;In general, a lower correction value means faster engine deccel during upshifts.</description>
-    <CATEGORYMEM index="0" category="12" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="18" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5E34A" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2835,7 +2955,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2867,7 +2987,9 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 2-&gt;3</title>
-    <CATEGORYMEM index="0" category="12" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="18" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5E3EA" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2878,7 +3000,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2903,14 +3025,16 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 3-&gt;4</title>
-    <CATEGORYMEM index="0" category="12" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="18" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5E4DA" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2921,7 +3045,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2946,14 +3070,16 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 4-&gt;5</title>
-    <CATEGORYMEM index="0" category="12" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="18" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5E5CA" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -2964,7 +3090,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -2989,14 +3115,16 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>HS 5-&gt;6</title>
-    <CATEGORYMEM index="0" category="12" />
+    <CATEGORYMEM index="0" category="16" />
+    <CATEGORYMEM index="1" category="30" />
+    <CATEGORYMEM index="2" category="18" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x5E6BA" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -3007,7 +3135,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="32.000000 * X">
+      <MATH equation="32*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -3032,60 +3160,14 @@
       <min>0.000000</min>
       <max>1.992188</max>
       <outputtype>1</outputtype>
-      <MATH equation="0.007813 * X">
+      <MATH equation="0.007813*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFCONSTANT uniqueid="0x0" flags="0xC">
-    <title>Switch for Gear Display in Dash</title>
-    <description>0 = only in M Mode, 2 = in D/S/M</description>
-    <CATEGORYMEM index="0" category="4" />
-    <EMBEDDEDDATA mmedaddress="0x6B5B0" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units>-</units>
-    <outputtype>2</outputtype>
-    <decimalpl>1</decimalpl>
-    <rangehigh>2.000000</rangehigh>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-  <XDFCONSTANT uniqueid="0x0">
-    <title>2nd gear start-off, trans temp, upper limit</title>
-    <description>Gearbox Oil-Temperature in &#176;C, where 2nd Gear Start Function get&apos;s disabled</description>
-    <CATEGORYMEM index="0" category="4" />
-    <EMBEDDEDDATA mmedaddress="0x6B8EE" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units>&#176;C</units>
-    <outputtype>2</outputtype>
-    <decimalpl>0</decimalpl>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-  <XDFCONSTANT uniqueid="0x0">
-    <title>2nd gear start-off, trans temp, lower limit</title>
-    <description>Gearbox Oil-Temperature in &#176;C, where 2nd Gear Start Function get&apos;s enabled</description>
-    <CATEGORYMEM index="0" category="4" />
-    <EMBEDDEDDATA mmedaddress="0x6B8F0" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units>&#176;C</units>
-    <outputtype>2</outputtype>
-    <decimalpl>0</decimalpl>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>Engine Torque Curve</title>
-    <CATEGORYMEM index="0" category="4" />
+    <title>Engine torque output</title>
+    <CATEGORYMEM index="0" category="16" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x6DFD0" mmedelementsizebits="16" mmedcolcount="13" mmedmajorstridebits="16" mmedminorstridebits="0" />
       <units>RPM</units>
@@ -3127,21 +3209,6 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFCONSTANT uniqueid="0x0">
-    <title>End of Warmup Mode TCC (&#176;C)</title>
-    <description>Below this threshold TCC cold maps are used. Above TCC warm maps.</description>
-    <CATEGORYMEM index="0" category="10" />
-    <EMBEDDEDDATA mmedaddress="0x6ECEE" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units>&#176;C</units>
-    <outputtype>2</outputtype>
-    <decimalpl>0</decimalpl>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-  <XDFCONSTANT uniqueid="0x0">
     <title>End of Warmup Mode Engine (&#176;C)</title>
     <CATEGORYMEM index="0" category="9" />
     <EMBEDDEDDATA mmedaddress="0x6ECF0" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -3170,21 +3237,6 @@
     </MATH>
   </XDFCONSTANT>
   <XDFCONSTANT uniqueid="0x0">
-    <title>End of Warmup Mode TCC (MPH</title>
-    <description>Speed Limit which must be touched once to leave Warmup Mode.</description>
-    <CATEGORYMEM index="0" category="10" />
-    <EMBEDDEDDATA mmedaddress="0x6ECF6" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units>km/h</units>
-    <outputtype>2</outputtype>
-    <decimalpl>0</decimalpl>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="X*0.621371">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-  <XDFCONSTANT uniqueid="0x0">
     <title>Max. Duration Warmup Mode Engine (s)</title>
     <CATEGORYMEM index="0" category="9" />
     <EMBEDDEDDATA mmedaddress="0x6ED00" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -3194,29 +3246,14 @@
     <datatype>0</datatype>
     <unittype>0</unittype>
     <DALINK index="0" />
-    <MATH equation="0.001000 * X">
+    <MATH equation="0.001*X">
       <VAR id="X" />
     </MATH>
   </XDFCONSTANT>
-  <XDFCONSTANT uniqueid="0x0">
-    <title>Max. Duration Warmup Mode TCC</title>
-    <description>Ends warmup mode, regardless of Temperature or Speed thresholds reached</description>
-    <CATEGORYMEM index="0" category="10" />
-    <EMBEDDEDDATA mmedaddress="0x6ED04" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units>s</units>
-    <outputtype>2</outputtype>
-    <decimalpl>0</decimalpl>
-    <datatype>0</datatype>
-    <unittype>0</unittype>
-    <DALINK index="0" />
-    <MATH equation="0.001000 * X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-  <XDFTABLE uniqueid="0x6848" flags="0x0">
+  <XDFTABLE uniqueid="0x6848" vislevel="2" flags="0x0">
     <title>HS 1-&gt;2 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="6" />
-    <CATEGORYMEM index="1" category="21" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3254,10 +3291,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x725" flags="0x0">
+  <XDFTABLE uniqueid="0x725" vislevel="2" flags="0x0">
     <title>HS 2-&gt;3 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="6" />
-    <CATEGORYMEM index="1" category="21" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3295,10 +3332,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x13A8" flags="0x0">
+  <XDFTABLE uniqueid="0x13A8" vislevel="2" flags="0x0">
     <title>HS 3-&gt;4 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="6" />
-    <CATEGORYMEM index="1" category="21" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3336,10 +3373,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x975" flags="0x0">
+  <XDFTABLE uniqueid="0x975" vislevel="2" flags="0x0">
     <title>HS 4-&gt;5 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="6" />
-    <CATEGORYMEM index="1" category="21" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3376,10 +3413,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x6FB3" flags="0x0">
+  <XDFTABLE uniqueid="0x6FB3" vislevel="2" flags="0x0">
     <title>HS 5-&gt;6 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="6" />
-    <CATEGORYMEM index="1" category="21" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3417,10 +3454,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x1460" flags="0x0">
+  <XDFTABLE uniqueid="0x1460" vislevel="2" flags="0x0">
     <title>HS 1-&gt;2 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="7" />
-    <CATEGORYMEM index="1" category="22" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3458,10 +3495,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x71A9" flags="0x0">
+  <XDFTABLE uniqueid="0x71A9" vislevel="2" flags="0x0">
     <title>HS 2-&gt;3 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="7" />
-    <CATEGORYMEM index="1" category="22" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3500,8 +3537,8 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x274A" flags="0x30">
-    <title>Torque Limit Per Gear</title>
-    <CATEGORYMEM index="0" category="4" />
+    <title>Torque limit, per gear</title>
+    <CATEGORYMEM index="0" category="33" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>Gear</units>
@@ -3546,10 +3583,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x4A5B" flags="0x0">
+  <XDFTABLE uniqueid="0x4A5B" vislevel="2" flags="0x0">
     <title>HS 3-&gt;4 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="7" />
-    <CATEGORYMEM index="1" category="22" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3587,10 +3624,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x438A" flags="0x0">
+  <XDFTABLE uniqueid="0x438A" vislevel="2" flags="0x0">
     <title>HS 4-&gt;5 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="7" />
-    <CATEGORYMEM index="1" category="22" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3628,10 +3665,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x31C0" flags="0x0">
+  <XDFTABLE uniqueid="0x31C0" vislevel="2" flags="0x0">
     <title>HS 5-&gt;6 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="7" />
-    <CATEGORYMEM index="1" category="22" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3669,10 +3706,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x3AB1" flags="0x0">
+  <XDFTABLE uniqueid="0x3AB1" vislevel="2" flags="0x0">
     <title>HS 1-&gt;2 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="8" />
-    <CATEGORYMEM index="1" category="23" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3710,10 +3747,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x25EC" flags="0x0">
+  <XDFTABLE uniqueid="0x25EC" vislevel="2" flags="0x0">
     <title>HS 2-&gt;3 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="8" />
-    <CATEGORYMEM index="1" category="23" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3750,10 +3787,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x7210" flags="0x0">
+  <XDFTABLE uniqueid="0x7210" vislevel="2" flags="0x0">
     <title>HS 3-&gt;4 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="8" />
-    <CATEGORYMEM index="1" category="23" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3791,10 +3828,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x63AB" flags="0x0">
+  <XDFTABLE uniqueid="0x63AB" vislevel="2" flags="0x0">
     <title>HS 4-&gt;5 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="8" />
-    <CATEGORYMEM index="1" category="23" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3832,10 +3869,10 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x418A" flags="0x0">
+  <XDFTABLE uniqueid="0x418A" vislevel="2" flags="0x0">
     <title>HS 5-&gt;6 Torque (lb-ft)</title>
     <CATEGORYMEM index="0" category="8" />
-    <CATEGORYMEM index="1" category="23" />
+    <CATEGORYMEM index="1" category="35" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>lb-ft</units>
@@ -3910,7 +3947,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -3961,7 +3998,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4013,7 +4050,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4065,7 +4102,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4117,7 +4154,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4170,7 +4207,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4223,7 +4260,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4275,7 +4312,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4328,7 +4365,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4381,7 +4418,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4433,7 +4470,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4486,7 +4523,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4539,7 +4576,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4591,7 +4628,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4644,7 +4681,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4697,7 +4734,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4750,7 +4787,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4803,7 +4840,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4856,7 +4893,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4909,7 +4946,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4990,10 +5027,105 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Cold Gear 4</title>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>TCC, cold, 1</title>
     <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
     <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="29" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="Closing" />
+      <LABEL index="1" value="Open" />
+      <LABEL index="2" value="Closed" />
+      <LABEL index="3" value="Opening" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x70FEA" mmedelementsizebits="16" mmedcolcount="9" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>9</indexcount>
+      <decimalpl>1</decimalpl>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70CF4" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>5000.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>TCC, cold, 2</title>
+    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="29" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <LABEL index="1" value="1" />
+      <LABEL index="2" value="2" />
+      <LABEL index="3" value="3" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x70FEA" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>9</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70D3C" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>TCC, cold, 3</title>
+    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="29" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>-</units>
@@ -5021,7 +5153,55 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70D84" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>TCC, cold, 4</title>
+    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="29" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <LABEL index="1" value="1" />
+      <LABEL index="2" value="2" />
+      <LABEL index="3" value="3" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x70FEA" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>9</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5038,338 +5218,10 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Cold Gear 5</title>
+    <title>TCC, cold, 5</title>
     <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
     <CATEGORYMEM index="0" category="10" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <LABEL index="1" value="1" />
-      <LABEL index="2" value="2" />
-      <LABEL index="3" value="3" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x70FEA" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>9</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="0.100000 * X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70A24" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <decimalpl>0</decimalpl>
-      <min>0.000000</min>
-      <max>65535.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Cold Gear 6</title>
-    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
-    <CATEGORYMEM index="0" category="10" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <LABEL index="1" value="1" />
-      <LABEL index="2" value="2" />
-      <LABEL index="3" value="3" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x70FEA" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>9</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="0.100000 * X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70A6C" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <decimalpl>0</decimalpl>
-      <min>0.000000</min>
-      <max>65535.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Warm Gear 1</title>
-    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
-    <CATEGORYMEM index="0" category="10" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <LABEL index="1" value="1" />
-      <LABEL index="2" value="2" />
-      <LABEL index="3" value="3" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x70FFE" mmedelementsizebits="16" mmedcolcount="9" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>9</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="0.100000 * X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70B44" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <decimalpl>0</decimalpl>
-      <min>0.000000</min>
-      <max>65535.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Warm Gear 2</title>
-    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
-    <CATEGORYMEM index="0" category="10" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <LABEL index="1" value="1" />
-      <LABEL index="2" value="2" />
-      <LABEL index="3" value="3" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x71076" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>9</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="0.100000 * X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70B8C" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <decimalpl>0</decimalpl>
-      <min>0.000000</min>
-      <max>65535.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Warm Gear 3</title>
-    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
-    <CATEGORYMEM index="0" category="10" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <LABEL index="1" value="1" />
-      <LABEL index="2" value="2" />
-      <LABEL index="3" value="3" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x7108A" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>9</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="0.100000 * X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70BD4" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <decimalpl>0</decimalpl>
-      <min>0.000000</min>
-      <max>65535.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Warm Gear 4</title>
-    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
-    <CATEGORYMEM index="0" category="10" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <LABEL index="1" value="1" />
-      <LABEL index="2" value="2" />
-      <LABEL index="3" value="3" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x7109E" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>9</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="0.100000 * X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70C1C" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <decimalpl>0</decimalpl>
-      <min>0.000000</min>
-      <max>65535.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Warm Gear 5</title>
-    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
-    <CATEGORYMEM index="0" category="10" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <LABEL index="1" value="1" />
-      <LABEL index="2" value="2" />
-      <LABEL index="3" value="3" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x710B2" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>9</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="0.100000 * X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70C64" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <decimalpl>0</decimalpl>
-      <min>0.000000</min>
-      <max>65535.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Warm Gear 6</title>
-    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
-    <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="29" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <units>-</units>
@@ -5397,7 +5249,343 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="0.100000 * X">
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70A24" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>TCC, cold, 6</title>
+    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="29" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <LABEL index="1" value="1" />
+      <LABEL index="2" value="2" />
+      <LABEL index="3" value="3" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x70FEA" mmedelementsizebits="16" mmedcolcount="9" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>9</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70A6C" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>TCC, warm, 1</title>
+    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="28" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="Closing" />
+      <LABEL index="1" value="Open" />
+      <LABEL index="2" value="Closed" />
+      <LABEL index="3" value="Opening" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x70FFE" mmedelementsizebits="16" mmedcolcount="9" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>9</indexcount>
+      <decimalpl>1</decimalpl>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70B44" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>5000.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>TCC, warm, 2</title>
+    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="28" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <LABEL index="1" value="1" />
+      <LABEL index="2" value="2" />
+      <LABEL index="3" value="3" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x71076" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>9</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70B8C" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>TCC, warm, 3</title>
+    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="28" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <LABEL index="1" value="1" />
+      <LABEL index="2" value="2" />
+      <LABEL index="3" value="3" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x7108A" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>9</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70BD4" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>TCC, warm, 4</title>
+    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="28" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <LABEL index="1" value="1" />
+      <LABEL index="2" value="2" />
+      <LABEL index="3" value="3" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x7109E" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>9</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70C1C" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>TCC, warm, 5</title>
+    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="28" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <LABEL index="1" value="1" />
+      <LABEL index="2" value="2" />
+      <LABEL index="3" value="3" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x710B2" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>9</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70C64" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>TCC, warm, 6</title>
+    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="0" category="10" />
+    <CATEGORYMEM index="1" category="28" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <LABEL index="1" value="1" />
+      <LABEL index="2" value="2" />
+      <LABEL index="3" value="3" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x70FEA" mmedelementsizebits="16" mmedcolcount="9" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>9</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.1*X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5413,156 +5601,69 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Cold Gear 1</title>
-    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+  <XDFCONSTANT uniqueid="0x0" flags="0xC">
+    <title>TCC, warmup, max duration</title>
+    <description>Ends warmup mode, regardless of Temperature or Speed thresholds reached</description>
     <CATEGORYMEM index="0" category="10" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <LABEL index="1" value="1" />
-      <LABEL index="2" value="2" />
-      <LABEL index="3" value="3" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x70FEA" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>9</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="0.100000 * X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70CF4" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <decimalpl>0</decimalpl>
-      <min>0.000000</min>
-      <max>65535.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Cold Gear 2</title>
-    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="1" category="27" />
+    <EMBEDDEDDATA mmedaddress="0x6ED04" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>sec</units>
+    <outputtype>2</outputtype>
+    <decimalpl>0</decimalpl>
+    <rangehigh>2000.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="x*.001">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x0" flags="0xC">
+    <title>TCC, warmup, threshold, speed</title>
+    <description>Speed which must be touched once to leave Warmup Mode</description>
     <CATEGORYMEM index="0" category="10" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <LABEL index="1" value="1" />
-      <LABEL index="2" value="2" />
-      <LABEL index="3" value="3" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x70FEA" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>9</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="0.100000 * X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70D3C" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <decimalpl>0</decimalpl>
-      <min>0.000000</min>
-      <max>65535.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>TCC Cold Gear 3</title>
-    <description>TCC (Torque Converter Clutch) maps function similar to Shiftmaps. Infield Values are OSS (Output Speed Shaft) RPM. Factor in your Tire Size and Reardiff Ratio and you&apos;re able to convert those values to vehicle speed. &#013;&#010;&#013;&#010;X-Axis is Throttle Input. The Y-Axis represents 4 possible transitions:&#013;&#010;&#013;&#010;0: Start of Open -&gt; Closed&#013;&#010;2: End of Open -&gt; Closed&#013;&#010;&#013;&#010;3: Start of Closed -&gt; Open&#013;&#010;1: End of Closed -&gt; Open</description>
+    <CATEGORYMEM index="1" category="27" />
+    <EMBEDDEDDATA mmedaddress="0x6ECF6" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>MPH</units>
+    <outputtype>2</outputtype>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.621371">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x0" flags="0xC">
+    <title>TCC, warmup, threshold, temperature</title>
+    <description>Below this threshold TCC cold maps are used. Above TCC warm maps.</description>
     <CATEGORYMEM index="0" category="10" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="" />
-      <LABEL index="1" value="1" />
-      <LABEL index="2" value="2" />
-      <LABEL index="3" value="3" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x70FEA" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>9</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="0.100000 * X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70D84" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <decimalpl>0</decimalpl>
-      <min>0.000000</min>
-      <max>65535.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0xE9C" flags="0x0">
-    <title>xDrive Torque Limit</title>
-    <description>This is a torque limit that seems to be used only for xDrive cars. - bahn</description>
+    <CATEGORYMEM index="1" category="27" />
+    <EMBEDDEDDATA mmedaddress="0x6ECEE" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>&#176;C</units>
+    <outputtype>2</outputtype>
+    <decimalpl>0</decimalpl>
+    <rangehigh>80.000000</rangehigh>
+    <rangelow>30.000000</rangelow>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0xE9C" flags="0x30">
+    <title>Torque limit, xDrive</title>
+    <description>This is a torque limit that seems to be used only for xDrive cars</description>
+    <CATEGORYMEM index="0" category="33" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
+      <LABEL index="0" value="lb-ft" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -5570,10 +5671,11 @@
     <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
+      <LABEL index="0" value="lb-ft" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -5582,10 +5684,58 @@
       <EMBEDDEDDATA mmedaddress="0x53D9C" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
       <decimalpl>2</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
+      <min>100.000000</min>
+      <max>700.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X*.7375621492772654">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFFLAG uniqueid="0x7CDB">
+    <title>Cluster gear display</title>
+    <description>Off : Only in M mode&#013;&#010;On : Always</description>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x6B5B0" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <mask>0x02</mask>
+  </XDFFLAG>
+  <XDFTABLE uniqueid="0x4C13" flags="0x30">
+    <title>2nd gear start-off disable, threshold, trans oil temp</title>
+    <CATEGORYMEM index="0" category="34" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>2</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="Disable" />
+      <LABEL index="1" value="Re-enable" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>&#176;C</units>
+      <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="Trans oil C" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x6B8EE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Trans oil &#176;C</units>
+      <decimalpl>1</decimalpl>
+      <min>50.000000</min>
+      <max>200.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
