@@ -1,4 +1,4 @@
-<!-- Written 09/28/2019 16:51:52 -->
+<!-- Written 09/28/2019 17:40:47 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -4406,7 +4406,7 @@
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70CF4" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
+      <units>Output shaft RPM</units>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>3000.000000</max>
@@ -4453,10 +4453,10 @@
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70D3C" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
+      <units>Output shaft RPM</units>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
-      <max>3000.000000</max>
+      <max>15000.000000</max>
       <outputtype>2</outputtype>
       <MATH equation="x">
         <VAR id="x" />
@@ -4500,10 +4500,10 @@
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70D84" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
+      <units>Output shaft RPM</units>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
-      <max>3000.000000</max>
+      <max>15000.000000</max>
       <outputtype>2</outputtype>
       <MATH equation="x">
         <VAR id="x" />
@@ -4547,10 +4547,10 @@
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x709DC" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
+      <units>Output shaft RPM</units>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
-      <max>3000.000000</max>
+      <max>15000.000000</max>
       <outputtype>2</outputtype>
       <MATH equation="x">
         <VAR id="x" />
@@ -4594,10 +4594,10 @@
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70A24" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
+      <units>Output shaft RPM</units>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
-      <max>3000.000000</max>
+      <max>15000.000000</max>
       <outputtype>2</outputtype>
       <MATH equation="x">
         <VAR id="x" />
@@ -4641,10 +4641,10 @@
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x70A6C" mmedelementsizebits="16" mmedrowcount="9" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
+      <units>Output shaft RPM</units>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
-      <max>3000.000000</max>
+      <max>15000.000000</max>
       <outputtype>2</outputtype>
       <MATH equation="x">
         <VAR id="x" />
