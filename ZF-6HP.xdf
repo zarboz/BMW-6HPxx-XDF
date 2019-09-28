@@ -1,4 +1,4 @@
-<!-- Written 09/28/2019 15:56:12 -->
+<!-- Written 09/28/2019 16:51:52 -->
 <XDFFORMAT version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -2064,9 +2064,9 @@
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedaddress="0x54618" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
-      <decimalpl>2</decimalpl>
+      <decimalpl>1</decimalpl>
       <min>-70.000000</min>
-      <max>737.562134</max>
+      <max>737.562073</max>
       <outputtype>2</outputtype>
       <MATH equation="((x*6)-204)*.7375621492772654">
         <VAR id="x" />
@@ -2159,9 +2159,9 @@
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedaddress="0x547A8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
-      <decimalpl>2</decimalpl>
+      <decimalpl>1</decimalpl>
       <min>-70.000000</min>
-      <max>737.562134</max>
+      <max>737.562073</max>
       <outputtype>2</outputtype>
       <MATH equation="((x*6)-204)*.7375621492772654">
         <VAR id="x" />
@@ -2254,9 +2254,9 @@
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedaddress="0x54938" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
-      <decimalpl>2</decimalpl>
+      <decimalpl>1</decimalpl>
       <min>-70.000000</min>
-      <max>737.562134</max>
+      <max>737.562073</max>
       <outputtype>2</outputtype>
       <MATH equation="((x*6)-204)*.7375621492772654">
         <VAR id="x" />
@@ -2334,7 +2334,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x54AC8" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x54AC8" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
       <units>lb-ft</units>
       <indexcount>1</indexcount>
       <outputtype>2</outputtype>
@@ -2349,9 +2349,9 @@
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedaddress="0x54AC8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
-      <decimalpl>2</decimalpl>
+      <decimalpl>1</decimalpl>
       <min>-70.000000</min>
-      <max>737.562134</max>
+      <max>737.562073</max>
       <outputtype>2</outputtype>
       <MATH equation="((x*6)-204)*.7375621492772654">
         <VAR id="x" />
@@ -2435,9 +2435,9 @@
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedaddress="0x571D8" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
-      <decimalpl>2</decimalpl>
+      <decimalpl>1</decimalpl>
       <min>-70.000000</min>
-      <max>737.562134</max>
+      <max>737.562073</max>
       <outputtype>2</outputtype>
       <MATH equation="((x*6)-204)*.7375621492772654">
         <VAR id="x" />
@@ -2523,9 +2523,9 @@
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedaddress="0x57344" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
-      <decimalpl>2</decimalpl>
+      <decimalpl>1</decimalpl>
       <min>-70.000000</min>
-      <max>737.562134</max>
+      <max>737.562073</max>
       <outputtype>2</outputtype>
       <MATH equation="((x*6)-204)*.7375621492772654">
         <VAR id="x" />
@@ -2610,9 +2610,9 @@
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedaddress="0x574B0" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
-      <decimalpl>2</decimalpl>
+      <decimalpl>1</decimalpl>
       <min>-70.000000</min>
-      <max>737.562134</max>
+      <max>737.562073</max>
       <outputtype>2</outputtype>
       <MATH equation="((x*6)-204)*.7375621492772654">
         <VAR id="x" />
@@ -2696,9 +2696,9 @@
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedaddress="0x5761C" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
-      <decimalpl>2</decimalpl>
+      <decimalpl>1</decimalpl>
       <min>-70.000000</min>
-      <max>737.562134</max>
+      <max>737.562073</max>
       <outputtype>2</outputtype>
       <MATH equation="((x*6)-204)*.7375621492772654">
         <VAR id="x" />
@@ -2783,9 +2783,9 @@
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedaddress="0x57788" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>lb-ft</units>
-      <decimalpl>2</decimalpl>
+      <decimalpl>1</decimalpl>
       <min>-70.000000</min>
-      <max>737.562134</max>
+      <max>737.562073</max>
       <outputtype>2</outputtype>
       <MATH equation="((x*6)-204)*.7375621492772654">
         <VAR id="x" />
