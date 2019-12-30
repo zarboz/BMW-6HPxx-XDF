@@ -1,0 +1,9 @@
+*.bak
+*.log
+*.swo
+*.swp
+*.txt
+._*
+.DS_Store
+
+/bin
